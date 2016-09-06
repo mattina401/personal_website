@@ -6,20 +6,8 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <script type="text/javascript" src="./js/jquery-3.1.0.js"></script>
     <script type="text/javascript" src="./js/jquery.flip.js"></script>
-    <title>Title</title>
+    <title>Jongyeon Kim</title>
 
-    <!--
-    <link rel="preload" as="image" href="./IMG/animation1.png">
-    <link rel="preload" as="image" href="./IMG/animation2.png">
-    <link rel="preload" as="image" href="./IMG/animation3.png">
-    <link rel="preload" as="image" href="./IMG/animation4.png">
-    <link rel="preload" as="image" href="./IMG/animation5.png">
-    <link rel="preload" as="image" href="./IMG/animation6.png">
-    <link rel="preload" as="image" href="./IMG/animation7.png">
-    <link rel="preload" as="image" href="./IMG/animation8.png">
-    <link rel="preload" as="image" href="./IMG/animation9.png">
-
--->
 </head>
 <body>
 
@@ -28,7 +16,8 @@
         <div class="container" style="width:100%; display: table;position: absolute">
             <div class="row" style="display: table-cell; vertical-align: middle; text-align: center;">
 
-                <div id="card" style="height: 80px; width: 80px; padding-right: 80px; padding-to: 80px; display: inline-block">
+                <div id="card"
+                     style="height: 80px; width: 80px; padding-right: 80px; padding-to: 80px; display: inline-block">
                     <div id="front-logo" class="front">
                         <img src="IMG/dino-logo-without-crown.png" alt="logo" height="80"
                              style="border: 5px solid #F5F5F5; border-radius: 25px;">
@@ -70,27 +59,23 @@
             </div>
         </div>
     </header>
-    <!--#218ff6, #17bcdf-->
     <div id="main" style="background-color: #17bcdf; height: 825px; width: 100%; padding-top: 0px;">
 
 
-        <div id="top-container">
+        <div id="top-container"
+             style="width: 903px; height: 893px; min-height: 593px; min-width: 903px; padding-top: 230px; margin-left:auto; margin-right:auto; left:0; right:0;">
 
 
-            <img src="./IMG/main-background.png"
-                 style="display: block; margin-left: auto; margin-right: auto; left:0; right:0;position: absolute; z-index: 1">
-
-            <div id="main-dino"
-                 style="display: block; margin-left: 900px; margin-bottom: 100px;margin-right: auto; left:0; right:0;position:relative;z-index: 2">
-                <!--<p style="padding-top: 200px; text-align: center; font-size: 100px; font-family: Cursive; ">I'm Rex</p>-->
-
+            <div
+                    style="display: block;position: absolute; z-index: 1; background: url('./IMG/main-background.png') no-repeat;width: 903vw; height: 593vw;">
             </div>
 
-            <!--
-                                <div id="dino1"
-                                     style="width: 903px; height: 593px; margin: 2% auto; background: url('./IMG/animation1.png') left center;"></div>
+            <div
+                    id="main-dino"
+                    style="display: block;margin-bottom: 100px; position:absolute;z-index: 2; margin-left: 400px;">
+            </div>
 
-            -->
+
         </div>
     </div>
 
@@ -167,7 +152,6 @@
     });
 
 
-
     var test = document.getElementById("front-logo");
 
     function whatClicked() {
@@ -182,11 +166,9 @@
     test.addEventListener("click", whatClicked, false);
 
 
-
     var test1 = document.getElementById("back-logo");
 
     function whatClicked1() {
-
 
 
         $('#main-dino').removeClass("run-ani");
@@ -195,17 +177,11 @@
     test1.addEventListener("click", whatClicked1, false);
 
 
-/*
-if($("#card").click()) {
-    $('#main-dino').addClass('run-ani');
-}
-*/
-
-
-
-
-
-
+    /*
+     if($("#card").click()) {
+     $('#main-dino').addClass('run-ani');
+     }
+     */
 
 
 </script>
