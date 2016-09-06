@@ -1,5 +1,4 @@
 
-
 #header {
 
     position: fixed;
@@ -43,7 +42,6 @@
     -o-transition: background-color 1.5s;
     -ms-transition: background-color 1.5s;
     transition: background-color 1.5s;
-
 
 }
 
@@ -97,12 +95,8 @@
 
 }
 
-
-
-
-
 #top-container {
-    min-height: 800px;
+    min-height: 1000px;
     padding: 230px 0;
 }
 
@@ -116,21 +110,43 @@
 
 }
 
+#main-dino {
+
+    width: 183px;
+    height: 593px;
+    background: url('../IMG/main-ani-shortversion.png') no-repeat;
+
+}
+
+.run-ani {
+
+    animation: play-main 7s steps(159) forwards;
+    -webkit-animation: play-main 7s steps(159) forwards;
+    -moz-animation: play-main 7s steps(159) forwards;
+    -o-animation: play-main 7s steps(159) forwards;
+    -ms-animation: play-main 7s steps(159) forwards;
+}
+
+
 #dino-programming {
 
-    margin:auto;
+    margin: auto;
     width: 176px;
-    height: 146px; background: url('../IMG/dino-programming.png');
+    height: 146px;
+    background: url('../IMG/dino-programming.png');
     border: 5px solid #17bcdf;
     border-radius: 25px;
     animation: play-pro 10s steps(19) infinite;
     -webkit-animation: play-pro 10s steps(19) infinite;
+    -moz-animation: play-pro 10s steps(19) infinite;
+    -o-animation: play-pro 10s steps(19) infinite;
+    -ms-animation: play-pro 10s steps(19) infinite;
 
 }
 
 #dino-team {
 
-    margin:auto;
+    margin: auto;
     width: 238px;
     height: 149px;
     background: url('../IMG/teamwork.png');
@@ -138,9 +154,11 @@
     border-radius: 25px;
     animation: play-team 5s steps(9) infinite;
     -webkit-animation: play-team 5s steps(9) infinite;
+    -moz-animation: play-team 5s steps(9) infinite;
+    -o-animation: play-team 5s steps(9) infinite;
+    -ms-animation: play-team 5s steps(9) infinite;
 
 }
-
 
 .dino1 {
 
@@ -156,67 +174,223 @@
 
 }
 
-
-
 @keyframes play {
-     0% {
-         background-position: 0;
-     }
-     100% {
-         background-position: -27090px;}
- }
-
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -27090px;
+    }
+}
 
 @-webkit-keyframes play {
     0% {
 
-        background-position: 0;}
+        background-position: 0;
+    }
     100% {
 
-        background-position: -27090px;}
+        background-position: -27090px;
+    }
 }
+
+@-moz-keyframes play {
+    0% {
+
+        background-position: 0;
+    }
+    100% {
+
+        background-position: -27090px;
+    }
+}
+
+@-o-keyframes play {
+    0% {
+
+        background-position: 0;
+    }
+    100% {
+
+        background-position: -27090px;
+    }
+}
+
+@-ms-keyframes play {
+    0% {
+
+        background-position: 0;
+    }
+    100% {
+
+        background-position: -27090px;
+    }
+}
+
+
+@keyframes play-main {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -29097px;
+    }
+}
+
+@-webkit-keyframes play-main {
+    from {
+
+        background-position: 0;
+    }
+    to {
+
+        background-position: -29097px;
+    }
+}
+
+@-moz-keyframes play-main {
+    from {
+
+        background-position: 0;
+    }
+    to {
+
+        background-position: -29097px;
+    }
+}
+@-o-keyframes play-main {
+    from {
+
+        background-position: 0;
+    }
+    to {
+
+        background-position: -29097px;
+    }
+}
+@-ms-keyframes play-main {
+    from {
+
+        background-position: 0;
+    }
+    to {
+
+        background-position: -29097px;
+    }
+}
+
+
+
+
 
 @keyframes play9 {
     0% {
-        background-position: 0;}
+        background-position: 0;
+    }
     100% {
-        background-position: -11739px;}
+        background-position: -11739px;
+    }
 }
-
 
 @-webkit-keyframes play9 {
     0% {
-        background-position: 0;}
+        background-position: 0;
+    }
     100% {
-        background-position: -11739px;}
+        background-position: -11739px;
+    }
 }
 
 @keyframes play-pro {
     0% {
-        background-position: 0;}
+        background-position: 0;
+    }
     100% {
-        background-position: -3344px;}
+        background-position: -3344px;
+    }
 }
-
 
 @-webkit-keyframes play-pro {
     0% {
-        background-position: 0;}
+        background-position: 0;
+    }
     100% {
-        background-position: -3344px;}
+        background-position: -3344px;
+    }
+}
+
+@-moz-keyframes play-pro {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -3344px;
+    }
+}
+
+@-o-keyframes play-pro {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -3344px;
+    }
+}
+
+@-ms-keyframes play-pro {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -3344px;
+    }
 }
 
 @keyframes play-team {
     0% {
-        background-position: 0;}
+        background-position: 0;
+    }
     100% {
-        background-position: -2142px;}
+        background-position: -2142px;
+    }
 }
-
 
 @-webkit-keyframes play-team {
     0% {
-        background-position: 0;}
+        background-position: 0;
+    }
     100% {
-        background-position: -2142px;}
+        background-position: -2142px;
+    }
 }
+
+@-moz-keyframes play-team {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -2142px;
+    }
+}
+
+
+@-o-keyframes play-team {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -2142px;
+    }
+}
+
+
+@-ms-keyframes play-team {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -2142px;
+    }
+}
+
+

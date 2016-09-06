@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <script type="text/javascript" src="./js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="./js/jquery.flip.js"></script>
     <title>Title</title>
 
     <!--
@@ -22,15 +24,41 @@
 <body>
 
 <section id="top">
-    <header id="header" style="">
-        <div class="container" style="width:100%; display: table">
-            <div class="row" style="display: table-cell; vertical-align: middle; text-align: center">
+    <header id="header" style="z-index: 3">
+        <div class="container" style="width:100%; display: table;position: absolute">
+            <div class="row" style="display: table-cell; vertical-align: middle; text-align: center;">
+
+                <div id="card" style="height: 80px; width: 80px; padding-right: 80px; padding-to: 80px; display: inline-block">
+                    <div id="front-logo" class="front">
+                        <img src="IMG/dino-logo-without-crown.png" alt="logo" height="80"
+                             style="border: 5px solid #F5F5F5; border-radius: 25px;">
+                        </img>
+                    </div>
+                    <div class="back">
+                        <img id="back-logo" src="IMG/logo.png" alt="logo" height="80"
+                             style="border: 5px solid #F5F5F5; border-radius: 25px;">
+                        </img>
+                    </div>
+                </div>
+
+
+                <!--
+
                 <div style="">
-                    <img id="logo" src="IMG/logo.png" alt="logo" height="80"
+
+
+                    <img id="logo" src="IMG/dino-logo-without-crown.png" alt="logo" height="80"
                          style="border: 5px solid #F5F5F5; border-radius: 25px;">
                     </img>
+
+                    <img id="logo2" src="IMG/logo.png" alt="logo" height="80"
+                         style="border: 5px solid #F5F5F5; border-radius: 25px;">
+                    </img>
+
                 </div>
-                <div class="menu">
+
+-->
+                <div class="menu" style="">
                     <nav id="top-nav">
                         <ul>
                             <li><a href="" style="color: inherit;"><p>About</p></a></li>
@@ -43,27 +71,32 @@
         </div>
     </header>
     <!--#218ff6, #17bcdf-->
-    <div id="main" style="background-color: #17bcdf; height: 900px; width: 100%; padding-top: 0px;">
-
-        <!--
-                <div id="top-container">
+    <div id="main" style="background-color: #17bcdf; height: 825px; width: 100%; padding-top: 0px;">
 
 
-                    <div id="dino1"
-                         style="width: 903px; height: 593px; margin: 2% auto; background: url('./IMG/animation1.png') left center;"></div>
+        <div id="top-container">
 
 
-                </div>
-        -->
+            <img src="./IMG/main-background.png"
+                 style="display: block; margin-left: auto; margin-right: auto; left:0; right:0;position: absolute; z-index: 1">
 
-        <img src="./IMG/main9.png" id=""
-             style="display: block; margin-left: auto; margin-right: auto; padding-top: 200px;">
+            <div id="main-dino"
+                 style="display: block; margin-left: 900px; margin-bottom: 100px;margin-right: auto; left:0; right:0;position:relative;z-index: 2">
+                <!--<p style="padding-top: 200px; text-align: center; font-size: 100px; font-family: Cursive; ">I'm Rex</p>-->
 
-        <!--<p style="padding-top: 200px; text-align: center; font-size: 100px; font-family: Cursive; ">I'm Rex</p>-->
+            </div>
 
+            <!--
+                                <div id="dino1"
+                                     style="width: 903px; height: 593px; margin: 2% auto; background: url('./IMG/animation1.png') left center;"></div>
+
+            -->
+        </div>
     </div>
+
 </section>
-<section id="hello" style="background-color: #FFF; height: 550px;text-align: center">
+
+<section id="hello" style="background-color: snow; height: 550px;text-align: center">
     <img id="logo-hello" src="IMG/logo.png" alt="logo" height="130"
          style="border: 5px solid #17bcdf; border-radius: 25px; margin-top: 100px;">
     </img>
@@ -75,10 +108,10 @@
         My goal is to obtain a position where I can combine my skills,<br>
         a well-rounded computer science education, and my computing knowledge. </p>
 </section>
-<section style="color: grey; font-size: 50px;text-align: center; padding-bottom: 50px;">
+<section style="color: grey; font-size: 50px;text-align: center; padding-bottom: 50px;background-color: snow">
     ......
 </section>
-<section id="what_i_can" style="background-color: #FFF; height: 800px;text-align: center">
+<section id="what_i_can" style="background-color: snow; height: 800px;text-align: center">
     <p><span style="font-size: 50px; color: #285e69">What I can do.</span></p>
 
 
@@ -119,12 +152,64 @@
         <ul>
             <li><a href="https://www.facebook.com/mattina401"><img src="IMG/facebook.png" height="20"></a></li>
             <li><a href="https://www.linkedin.com/in/rexkim401"><img src="IMG/linkedin.png" height="20"></a></li>
-            <li><a href=""><img src="IMG/github.png" height="20"></a></li>
+            <li><a href="https://github.com/mattina401"><img src="IMG/github.png" height="20"></a></li>
             <li><a href=""><img src="IMG/gmail.png" height="20"></a></li>
         </ul>
     </div>
 
 </footer>
+
+
+<script type="text/javascript">
+    $("#card").flip({
+        axis: 'y',
+        trigger: 'click',
+    });
+
+
+
+    var test = document.getElementById("front-logo");
+
+    function whatClicked() {
+        var heading = $('#main-dino').clone().removeClass("run-ani");
+
+        $('#main-dino').remove();
+        $('#top-container').append(heading);
+
+        $('#main-dino').addClass("run-ani");
+    }
+
+    test.addEventListener("click", whatClicked, false);
+
+
+
+    var test1 = document.getElementById("back-logo");
+
+    function whatClicked1() {
+
+
+
+        $('#main-dino').removeClass("run-ani");
+    }
+
+    test1.addEventListener("click", whatClicked1, false);
+
+
+/*
+if($("#card").click()) {
+    $('#main-dino').addClass('run-ani');
+}
+*/
+
+
+
+
+
+
+
+
+</script>
+
 
 <!--
 <span id="preloaded-images">
@@ -140,7 +225,7 @@
 </span>
 
 -->
-<script type="text/javascript" src="./js/jquery-3.1.0.js"></script>
+
 
 <script>
 
