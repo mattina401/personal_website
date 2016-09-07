@@ -2,9 +2,361 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <script type="text/javascript" src="./js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="./js/jquery.flip.js"></script>
+    <title>Jongyeon Kim</title>
+
 </head>
-<body>
+<body onload="auto_showDivs">
+
+<section id="top">
+    <header id="header" style="z-index: 3">
+        <div class="container" style="width:100%; display: table;position: absolute">
+            <div class="row" style="display: table-cell; vertical-align: middle; text-align: center;">
+
+                <div id="card"
+                     style="height: 80px; width: 80px; padding-right: 80px;display: inline-block">
+                    <div id="front-logo" class="front">
+                        <img src="IMG/dino-logo-without-crown.png" alt="logo" height="80"
+                             style="border: 5px solid #F5F5F5; border-radius: 25px;">
+                        </img>
+                    </div>
+                    <div class="back">
+                        <img id="back-logo" src="IMG/logo.png" alt="logo" height="80"
+                             style="border: 5px solid #F5F5F5; border-radius: 25px;">
+                        </img>
+                    </div>
+                </div>
+
+                <div class="menu" style="">
+                    <nav id="top-nav">
+                        <ul>
+                            <li><a href="index.html" style="color: inherit;"><p>About</p></a></li>
+                            <li><a href="" style="color: inherit;"><p>Work</p></a></li>
+                            <li><a href="" style="color: inherit;"><p>Notes</p></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="main" style="background-color: #17bcdf; height: 500px; width: 100%; padding-top: 0px;">
+
+
+    </div>
+
+</section>
+
+<section id="hello" style="background-color: #FFF; height: 550px;text-align: center">
+
+</section>
+<section style="color: grey; font-size: 50px;text-align: center; padding-bottom: 50px;background-color: #FFF">
+    ......
+</section>
+
+<script>
+    var slideIndex = 1;
+
+    function plusDivs(n,m) {
+        showDivs(slideIndex += n, m);
+    }
+
+    function showDivs(n,m) {
+        var i;
+        var x = document.getElementsByClassName(m);
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.visibility = "hidden";
+        }
+        x[slideIndex-1].style.visibility = "visible";
+
+    }
+
+    window.setInterval(function auto_showDivs() {
+        var i;
+        var x = document.getElementsByClassName('driving');
+        if (1 > x.length) {slideIndex = 1}
+        if (1 < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.visibility = "hidden";
+        }
+        x[slideIndex-1].style.visibility = "visible";
+
+    }, 500);
+
+
+
+
+
+
+</script>
+
+<style type="text/css">
+
+    .mySlides {
+        height: 450px;
+        width: 650px;
+        position: absolute;
+        margin-left:auto;
+        margin-right:auto;
+        left:0;
+        right:0;
+        border-radius: 2%;
+    }
+</style>
+
+
+<section id="self-driving" style="background-color: #F2EDD8; height: 800px;text-align: center">
+
+
+    <div style="padding-top: 100px;">
+        <img class="mySlides driving" style="visibility: visible;" src="IMG/self-driving/img-1.PNG"/>
+        <img class="mySlides driving" style="visibility: hidden;" src="IMG/self-driving/img-2.PNG"/>
+        <img class="mySlides driving" style="visibility: hidden;" src="IMG/self-driving/img-3.PNG"/>
+        <img class="mySlides driving" style="visibility: hidden;" src="IMG/self-driving/img-4.PNG"/>
+        <img class="mySlides driving" style="visibility: hidden;" src="IMG/self-driving/img-5.PNG"/>
+        <img class="mySlides driving" style="visibility: hidden;" src="IMG/self-driving/img-6.PNG"/>
+    </div>
+    <div style="padding-top: 200px;">
+        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"onclick="plusDivs(-1, 'driving')"/>
+        <img src="IMG/right.png"style="position: relative; border-radius: 100%; right:0;"onclick="plusDivs(1, 'driving')"/>
+    </div>
+
+    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #7B8D8E">
+        <span style="font-size: 30px;">Self-Driving Simulator</span><br>
+
+        Java Developer Spring 2016<br><br>
+        Java application to simulate an environment to observe<br>
+        driving patterns of self-driven cars.<br>
+        Integrate OpenStreetMap to the project to depict real roads<br>
+        in the location of the user’s choice.
+    </p>
+
+</section>
+
+<section id="yelp-scraper" style="background-color: #7B8D8E; height: 800px;text-align: center">
+    <div style="padding-top: 100px;">
+        <img class="mySlides yelp" style="visibility: visible;" src="IMG/yelp-scraper/img-1.PNG"/>
+        <img class="mySlides yelp" style="visibility: hidden;" src="IMG/yelp-scraper/img-2.PNG"/>
+        <img class="mySlides yelp" style="visibility: hidden;" src="IMG/yelp-scraper/img-3.PNG"/>
+        <img class="mySlides yelp" style="visibility: hidden;" src="IMG/yelp-scraper/img-4.PNG"/>
+
+    </div>
+    <div style="padding-top: 200px;">
+        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"onclick="plusDivs(-1, 'yelp')"/>
+        <img src="IMG/right.png"style="position: relative; border-radius: 100%; right:0;"onclick="plusDivs(1, 'yelp')"/>
+    </div>
+
+    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #5D4C46">
+        <span style="font-size: 30px;">Yelp-Scraper</span><br>
+
+        Java Developer Spring 2015<br><br>
+        Java application to collect HTML raw data which is<br>
+        unstructured data and convert it into a structured data form.<br>
+        Implemented a Java based web scraper tool, using Jsoup<br>
+        library, which can collect information, such as business<br>
+        information and rating, from raw HTML data of Yelp.com<br>
+        webpage and categorize them to find previously unknown<br>
+        patterns and relationships.
+    </p>
+
+</section>
+
+<section id="gt-book" style="background-color: #5D4C46; height: 800px;text-align: center">
+    <div style="padding-top: 100px;">
+        <img class="mySlides book" style="visibility: visible;" src="IMG/book-swap/img-1.PNG"/>
+        <img class="mySlides book" style="visibility: hidden;" src="IMG/book-swap/img-2.PNG"/>
+        <img class="mySlides book" style="visibility: hidden;" src="IMG/book-swap/img-3.PNG"/>
+        <img class="mySlides book" style="visibility: hidden;" src="IMG/book-swap/img-4.PNG"/>
+        <img class="mySlides book" style="visibility: hidden;" src="IMG/book-swap/img-5.PNG"/>
+
+    </div>
+    <div style="padding-top: 200px;">
+        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"onclick="plusDivs(-1, 'book')"/>
+        <img src="IMG/right.png"style="position: relative; border-radius: 100%; right:0;"onclick="plusDivs(1, 'book')"/>
+    </div>
+
+    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #F1A94E">
+        <span style="font-size: 30px;">Apartment Rental System</span><br>
+        Full Stack Web Developer Fall 2014<br><br>
+
+        A Website application that allows users to exchange their<br>
+        used textbooks among Georgia tech student.<br>
+        Learned HTML, CSS, and JavaScript with .NET Framework<br>
+        Acquire role of member in a group as a full stack web dev<br>
+    </p>
+
+
+</section>
+
+<section id="apt-rent" style="background-color: #F1A94E; height: 800px;text-align: center">
+
+    <div style="padding-top: 100px;">
+        <img class="mySlides apt" style="visibility: visible;" src="IMG/apt-rent/img-1.PNG"/>
+        <img class="mySlides apt" style="visibility: hidden;" src="IMG/apt-rent/img-2.PNG"/>
+        <img class="mySlides apt" style="visibility: hidden;" src="IMG/apt-rent/img-3.PNG"/>
+        <img class="mySlides apt" style="visibility: hidden;" src="IMG/apt-rent/img-4.PNG"/>
+        <img class="mySlides apt" style="visibility: hidden;" src="IMG/apt-rent/img-5.PNG"/>
+
+    </div>
+    <div style="padding-top: 200px;">
+        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"onclick="plusDivs(-1, 'apt')"/>
+        <img src="IMG/right.png"style="position: relative; border-radius: 100%; right:0;"onclick="plusDivs(1, 'apt')"/>
+    </div>
+
+    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #9F6164">
+        <span style="font-size: 30px;">Apartment Rental System</span><br>
+        Full Stack Web Developer Fall 2014<br><br>
+
+        Simple web application which can provide necessary<br>
+        service for resident and manager.<br>
+        Designed and implemented a Database application using a<br>
+        relational DBMS that supports standard SQL and PHP.<br>
+        Learned actual database design process and use of modern<br>
+        database system.<br>
+        Learned how analyze, specify, design, implement,<br>
+        document and demonstrate an information system application<br>
+        to support a new apartment system.<br>
+    </p>
+
+</section>
+
+<section id="pac-man" style="background-color: #9F6164; height: 800px;text-align: center">
+    <div style="padding-top: 100px;">
+        <img class="mySlides pac" style="visibility: visible;" src="IMG/pac-man/img-1.PNG"/>
+        <img class="mySlides pac" style="visibility: hidden;" src="IMG/pac-man/img-2.PNG"/>
+        <img class="mySlides pac" style="visibility: hidden;" src="IMG/pac-man/img-3.PNG"/>
+
+
+    </div>
+    <div style="padding-top: 200px;">
+        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"onclick="plusDivs(-1, 'pac')"/>
+        <img src="IMG/right.png"style="position: relative; border-radius: 100%; right:0;"onclick="plusDivs(1, 'pac')"/>
+    </div>
+
+    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #6F3662">
+        <span style="font-size: 30px;">Pac-Man</span><br>
+        Java Developer Fall 2013<br><br>
+
+        Simple maze solver based on Java to solve a maze automatically.<br>
+        To solve maze, use BST, DST, right hand rule and left hand rule.<br>
+        Learend how to apply data structure to simple game.<br>
+    </p>
+
+</section>
+
+
+
+<footer style="background-color: #17bcdf; height: 150px; width: 100%; display: table">
+    <div class="footer" style="display: table-cell; vertical-align: middle;">
+        <ul>
+            <li><a href="https://www.facebook.com/mattina401"><img src="IMG/facebook.png" height="20"></a></li>
+            <li><a href="https://www.linkedin.com/in/rexkim401"><img src="IMG/linkedin.png" height="20"></a></li>
+            <li><a href="https://github.com/mattina401"><img src="IMG/github.png" height="20"></a></li>
+            <li><a href=""><img src="IMG/gmail.png" height="20"></a></li>
+        </ul>
+    </div>
+
+</footer>
+
+
+<script type="text/javascript">
+    $("#card").flip({
+        axis: 'y',
+        trigger: 'click',
+    });
+
+
+    var test = document.getElementById("front-logo");
+
+    function whatClicked() {
+        var heading = $('#main-dino').clone().removeClass("run-ani");
+
+        $('#main-dino').remove();
+        $('#top-container').append(heading);
+
+        $('#main-dino').addClass("run-ani");
+    }
+
+    test.addEventListener("click", whatClicked, false);
+
+
+    var test1 = document.getElementById("back-logo");
+
+    function whatClicked1() {
+
+
+        $('#main-dino').removeClass("run-ani");
+    }
+
+    test1.addEventListener("click", whatClicked1, false);
+
+
+</script>
+
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        $('#dino1').addClass("dino1");
+    }
+
+
+    console.log('page loaded');
+
+</script>
+
+
+<script type="text/javascript">
+
+    var previousScroll = 0,
+            headerOrgOffset = $('.container').height();
+
+    $('#header').height($('.container').height());
+
+    $(window).scroll(function () {
+        var currentScroll = $(this).scrollTop();
+
+        if (currentScroll > 0) {
+
+
+            if (currentScroll > previousScroll) {
+                /* $('#header').slideUp(); */
+                $('#header').addClass('slide');
+            } else {
+                /*$('#header').slideDown();*/
+                $('#header').removeClass('slide');
+                $('.container').addClass("change1");
+            }
+        }
+        previousScroll = currentScroll;
+    });
+
+
+</script>
+
+<script type="text/javascript">
+
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll == 0) {
+            $(".container").addClass("change");
+            $('.container').removeClass("change1");
+        } else {
+            $(".container").removeClass("change");
+        }
+
+
+    });
+
+</script>
+
 
 </body>
 </html>
+
