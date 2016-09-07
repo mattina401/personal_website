@@ -9,7 +9,7 @@
     <title>Jongyeon Kim</title>
 
 </head>
-<body onload="auto_showDivs">
+<body>
 
 <section id="top">
     <header id="header" style="z-index: 3">
@@ -19,12 +19,12 @@
                 <div id="card"
                      style="height: 80px; width: 80px; padding-right: 80px;display: inline-block">
                     <div id="front-logo" class="front">
-                        <img src="IMG/dino-logo-without-crown.png" alt="logo" height="80"
+                        <img src="IMG/logo.png" alt="logo" height="80"
                              style="border: 5px solid #F5F5F5; border-radius: 25px;">
                         </img>
                     </div>
                     <div class="back">
-                        <img id="back-logo" src="IMG/logo.png" alt="logo" height="80"
+                        <img id="back-logo" src="IMG/dino-logo-glasses.png" alt="logo" height="80"
                              style="border: 5px solid #F5F5F5; border-radius: 25px;">
                         </img>
                     </div>
@@ -42,71 +42,44 @@
             </div>
         </div>
     </header>
-    <div id="main" style="background-color: #17bcdf; height: 500px; width: 100%; padding-top: 0px;">
+    <div id="main" style="background-color: #17bcdf; height: 730px; width: 100%; padding-top: 0px;">
+
+        <div id="top-container"
+             style="width: 903px; height: 500px;min-width: 903px; padding-top: 230px; margin-left:auto; margin-right:auto; left:0; right:0;">
+
+
+
+            <div
+                    id="work-dino"
+                    style="display: block;margin-bottom: 100px; position:absolute;z-index: 2; margin-left: 300px;">
+            </div>
+
+
+        </div>
 
 
     </div>
 
 </section>
 
-<section id="hello" style="background-color: #FFF; height: 550px;text-align: center">
+<section id="hello" style="background-color: #FFF; height: 450px;text-align: center">
+
+    <img id="logo-hello" src="IMG/dino-logo-glasses.png" alt="logo" height="130"
+         style="border: 5px solid #17bcdf; border-radius: 25px; margin-top: 100px;">
+    </img>
+    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 50px; font-size: 20px;">
+        <span style="font-size: 30px; color: #17bcdf">Hi.</span><br><br>
+    I still learning many things and really happy to improve myself.<br>
+    Here's a section of my recent projects.<br>
+    I always try to connect my overall skill and knowledge in a project.<br>
+
+
 
 </section>
 <section style="color: grey; font-size: 50px;text-align: center; padding-bottom: 50px;background-color: #FFF">
     ......
 </section>
 
-<script>
-    var slideIndex = 1;
-
-    function plusDivs(n,m) {
-        showDivs(slideIndex += n, m);
-    }
-
-    function showDivs(n,m) {
-        var i;
-        var x = document.getElementsByClassName(m);
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.visibility = "hidden";
-        }
-        x[slideIndex-1].style.visibility = "visible";
-
-    }
-
-    window.setInterval(function auto_showDivs() {
-        var i;
-        var x = document.getElementsByClassName('driving');
-        if (1 > x.length) {slideIndex = 1}
-        if (1 < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.visibility = "hidden";
-        }
-        x[slideIndex-1].style.visibility = "visible";
-
-    }, 500);
-
-
-
-
-
-
-</script>
-
-<style type="text/css">
-
-    .mySlides {
-        height: 450px;
-        width: 650px;
-        position: absolute;
-        margin-left:auto;
-        margin-right:auto;
-        left:0;
-        right:0;
-        border-radius: 2%;
-    }
-</style>
 
 
 <section id="self-driving" style="background-color: #F2EDD8; height: 800px;text-align: center">
@@ -263,6 +236,32 @@
 </footer>
 
 
+<script>
+    var slideIndex = 1;
+
+    function plusDivs(n,m) {
+        showDivs(slideIndex += n, m);
+    }
+
+    function showDivs(n,m) {
+        var i;
+        var x = document.getElementsByClassName(m);
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.visibility = "hidden";
+        }
+        x[slideIndex-1].style.visibility = "visible";
+
+    }
+
+</script>
+
+
+
+
+
+
 <script type="text/javascript">
     $("#card").flip({
         axis: 'y',
@@ -273,12 +272,12 @@
     var test = document.getElementById("front-logo");
 
     function whatClicked() {
-        var heading = $('#main-dino').clone().removeClass("run-ani");
+        var heading = $('#work-dino').clone().removeClass("run-ani-work");
 
-        $('#main-dino').remove();
+        $('#work-dino').remove();
         $('#top-container').append(heading);
 
-        $('#main-dino').addClass("run-ani");
+        $('#work-dino').addClass("run-ani-work");
     }
 
     test.addEventListener("click", whatClicked, false);
@@ -289,7 +288,7 @@
     function whatClicked1() {
 
 
-        $('#main-dino').removeClass("run-ani");
+        $('#work-dino').removeClass("run-ani-work");
     }
 
     test1.addEventListener("click", whatClicked1, false);

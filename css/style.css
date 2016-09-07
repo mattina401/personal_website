@@ -114,6 +114,19 @@
 
 }
 
+#work-dino {
+
+    width: 347px;
+    height: 500px;
+    background: url('../IMG/work-animation.png') no-repeat;
+
+}
+
+
+
+
+
+
 .run-ani {
 
     animation: play-main 7s steps(159) forwards;
@@ -122,6 +135,17 @@
     -o-animation: play-main 7s steps(159) forwards;
     -ms-animation: play-main 7s steps(159) forwards;
 }
+
+
+.run-ani-work {
+
+    animation: play-main-work 7s steps(45) forwards;
+    -webkit-animation: play-main-work 7s steps(45) forwards;
+    -moz-animation: play-main-work 7s steps(45) forwards;
+    -o-animation: play-main-work 7s steps(45) forwards;
+    -ms-animation: play-main-work 7s steps(45) forwards;
+}
+
 
 
 #dino-programming {
@@ -279,6 +303,72 @@
 
 
 
+@keyframes play-main-work {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -15615px;
+    }
+}
+
+@-webkit-keyframes play-main-work {
+    from {
+
+        background-position: 0;
+    }
+    to {
+
+        background-position: -15615px;
+    }
+}
+
+@-moz-keyframes play-main-work {
+    from {
+
+        background-position: 0;
+    }
+    to {
+
+        background-position: -15615px;
+    }
+}
+@-o-keyframes play-main-work {
+    from {
+
+        background-position: 0;
+    }
+    to {
+
+        background-position: -15615px;
+    }
+}
+@-ms-keyframes play-main-work {
+    from {
+
+        background-position: 0;
+    }
+    to {
+
+        background-position: -15615px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes play9 {
     0% {
         background-position: 0;
@@ -401,3 +491,14 @@
 
 }
 */
+
+.mySlides {
+    height: 450px;
+    width: 650px;
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    border-radius: 2%;
+}
