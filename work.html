@@ -6,10 +6,12 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <script type="text/javascript" src="./js/jquery-3.1.0.js"></script>
     <script type="text/javascript" src="./js/jquery.flip.js"></script>
+    <link rel="icon" href="./IMG/dino-logo-glasses.png">
     <title>Jongyeon Kim</title>
 
 </head>
 <body>
+
 
 <section id="top">
     <header id="header" style="z-index: 3">
@@ -18,8 +20,8 @@
 
                 <div id="card"
                      style="height: 80px; width: 80px; padding-right: 80px;display: inline-block">
-                    <div id="front-logo" class="front">
-                        <img src="IMG/logo.png" alt="logo" height="80"
+                    <div class="front">
+                        <img id="front-logo" src="IMG/logo.png" alt="logo" height="80"
                              style="border: 5px solid #F5F5F5; border-radius: 25px;">
                         </img>
                     </div>
@@ -33,9 +35,9 @@
                 <div class="menu" style="">
                     <nav id="top-nav">
                         <ul>
-                            <li><a href="index.html" style="color: inherit;"><p>About</p></a></li>
-                            <li><a href="" style="color: inherit;"><p>Work</p></a></li>
-                            <li><a href="" style="color: inherit;"><p>Notes</p></a></li>
+                            <li><a href="index.html" style="color: inherit;font-size: 17px;"><p>About</p></a></li>
+                            <li><a href="work.html" style="color: inherit;font-size: 17px;"><p>Work</p></a></li>
+                            <li><a href="Resume(JongyeonKim).pdf" style="color: inherit;font-size: 17px;"><p>Resume</p></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -46,7 +48,6 @@
 
         <div id="top-container"
              style="width: 903px; height: 500px;min-width: 903px; padding-top: 230px; margin-left:auto; margin-right:auto; left:0; right:0;">
-
 
 
             <div
@@ -69,10 +70,9 @@
     </img>
     <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 50px; font-size: 20px;">
         <span style="font-size: 30px; color: #17bcdf">Hi.</span><br><br>
-    I still learning many things and really happy to improve myself.<br>
-    Here's a section of my recent projects.<br>
-    I always try to connect my overall skill and knowledge in a project.<br>
-
+        I still learning many things and really happy to improve myself.<br>
+        Here's a section of my recent projects.<br>
+        I always try to connect my overall skill and knowledge in a project.<br>
 
 
 </section>
@@ -81,8 +81,7 @@
 </section>
 
 
-
-<section id="self-driving" style="background-color: #F2EDD8; height: 800px;text-align: center">
+<section id="self-driving" style="background-color: #F2EDD8; height: 900px;text-align: center">
 
 
     <div style="padding-top: 100px;">
@@ -94,8 +93,10 @@
         <img class="mySlides driving" style="visibility: hidden;" src="IMG/self-driving/img-6.PNG"/>
     </div>
     <div style="padding-top: 200px;">
-        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"onclick="plusDivs(-1, 'driving')"/>
-        <img src="IMG/right.png"style="position: relative; border-radius: 100%; right:0;"onclick="plusDivs(1, 'driving')"/>
+        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"
+             onclick="plusDivs(-1, 'driving')"/>
+        <img src="IMG/right.png" style="position: relative; border-radius: 100%; right:0;"
+             onclick="plusDivs(1, 'driving')"/>
     </div>
 
     <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #7B8D8E">
@@ -108,9 +109,43 @@
         in the location of the user’s choice.
     </p>
 
+    <div>
+        <a href="https://github.com/mattina401/self_driving"><img height="50px" src="IMG/github-logo.png"></a>
+    </div>
+
 </section>
 
-<section id="yelp-scraper" style="background-color: #7B8D8E; height: 800px;text-align: center">
+<section id="assembler" style="background-color: #7B8D8E; height: 900px;text-align: center">
+    <div style="padding-top: 100px;">
+        <img class="mySlides assembler" style="visibility: visible;" src="IMG/assembler/img-1.PNG"/>
+        <img class="mySlides assembler" style="visibility: hidden;" src="IMG/assembler/img-2.PNG"/>
+        <img class="mySlides assembler" style="visibility: hidden;" src="IMG/assembler/img-3.PNG"/>
+
+
+    </div>
+    <div style="padding-top: 200px;">
+        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"
+             onclick="plusDivs(-1, 'assembler')"/>
+        <img src="IMG/right.png" style="position: relative; border-radius: 100%; right:0;"
+             onclick="plusDivs(1, 'assembler')"/>
+    </div>
+
+    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #5D4C46">
+        <span style="font-size: 30px;">Assembler</span><br>
+        Python Developer Fall 2015<br><br>
+
+
+        An assembler can read an assembly file containing a program that ISA spec,<br>
+        and it output a MIF file with 2048 32-bit words of memory.
+
+
+    </p>
+    <div>
+        <a href="https://github.com/mattina401/CS-3220/tree/master/P2_assembler"><img height="50px" src="IMG/github-logo.png"></a>
+    </div>
+</section>
+
+<section id="yelp-scraper" style="background-color: #5D4C46; height: 900px;text-align: center">
     <div style="padding-top: 100px;">
         <img class="mySlides yelp" style="visibility: visible;" src="IMG/yelp-scraper/img-1.PNG"/>
         <img class="mySlides yelp" style="visibility: hidden;" src="IMG/yelp-scraper/img-2.PNG"/>
@@ -119,26 +154,29 @@
 
     </div>
     <div style="padding-top: 200px;">
-        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"onclick="plusDivs(-1, 'yelp')"/>
-        <img src="IMG/right.png"style="position: relative; border-radius: 100%; right:0;"onclick="plusDivs(1, 'yelp')"/>
+        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"
+             onclick="plusDivs(-1, 'yelp')"/>
+        <img src="IMG/right.png" style="position: relative; border-radius: 100%; right:0;"
+             onclick="plusDivs(1, 'yelp')"/>
     </div>
 
-    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #5D4C46">
+    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #F7DCB4">
         <span style="font-size: 30px;">Yelp-Scraper</span><br>
 
         Java Developer Spring 2015<br><br>
         Java application to collect HTML raw data which is<br>
         unstructured data and convert it into a structured data form.<br>
-        Implemented a Java based web scraper tool, using Jsoup<br>
-        library, which can collect information, such as business<br>
-        information and rating, from raw HTML data of Yelp.com<br>
-        webpage and categorize them to find previously unknown<br>
-        patterns and relationships.
+        Implemented a Java based web scraper tool, using Jsoup library,<br>
+        which can collect information, such as business information and rating,<br>
+        from raw HTML data of Yelp.com webpage and categorize them<br>
+        to find previously unknown patterns and relationships.
     </p>
-
+    <div>
+        <a href="https://github.com/mattina401/YelpScraper"><img height="50px" src="IMG/github-logo.png"></a>
+    </div>
 </section>
 
-<section id="gt-book" style="background-color: #5D4C46; height: 800px;text-align: center">
+<section id="gt-book" style="background-color: #F7DCB4; height: 900px;text-align: center">
     <div style="padding-top: 100px;">
         <img class="mySlides book" style="visibility: visible;" src="IMG/book-swap/img-1.PNG"/>
         <img class="mySlides book" style="visibility: hidden;" src="IMG/book-swap/img-2.PNG"/>
@@ -148,12 +186,14 @@
 
     </div>
     <div style="padding-top: 200px;">
-        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"onclick="plusDivs(-1, 'book')"/>
-        <img src="IMG/right.png"style="position: relative; border-radius: 100%; right:0;"onclick="plusDivs(1, 'book')"/>
+        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"
+             onclick="plusDivs(-1, 'book')"/>
+        <img src="IMG/right.png" style="position: relative; border-radius: 100%; right:0;"
+             onclick="plusDivs(1, 'book')"/>
     </div>
 
-    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #F1A94E">
-        <span style="font-size: 30px;">Apartment Rental System</span><br>
+    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #9F6164">
+        <span style="font-size: 30px;">GT Book Swap</span><br>
         Full Stack Web Developer Fall 2014<br><br>
 
         A Website application that allows users to exchange their<br>
@@ -161,11 +201,13 @@
         Learned HTML, CSS, and JavaScript with .NET Framework<br>
         Acquire role of member in a group as a full stack web dev<br>
     </p>
-
+    <div>
+        <a href="https://github.com/mattina401/BookSwap"><img height="50px" src="IMG/github-logo.png"></a>
+    </div>
 
 </section>
 
-<section id="apt-rent" style="background-color: #F1A94E; height: 800px;text-align: center">
+<section id="apt-rent" style="background-color: #9F6164; height: 900px;text-align: center">
 
     <div style="padding-top: 100px;">
         <img class="mySlides apt" style="visibility: visible;" src="IMG/apt-rent/img-1.PNG"/>
@@ -176,11 +218,13 @@
 
     </div>
     <div style="padding-top: 200px;">
-        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"onclick="plusDivs(-1, 'apt')"/>
-        <img src="IMG/right.png"style="position: relative; border-radius: 100%; right:0;"onclick="plusDivs(1, 'apt')"/>
+        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"
+             onclick="plusDivs(-1, 'apt')"/>
+        <img src="IMG/right.png" style="position: relative; border-radius: 100%; right:0;"
+             onclick="plusDivs(1, 'apt')"/>
     </div>
 
-    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #9F6164">
+    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #0D6B7F">
         <span style="font-size: 30px;">Apartment Rental System</span><br>
         Full Stack Web Developer Fall 2014<br><br>
 
@@ -190,14 +234,15 @@
         relational DBMS that supports standard SQL and PHP.<br>
         Learned actual database design process and use of modern<br>
         database system.<br>
-        Learned how analyze, specify, design, implement,<br>
-        document and demonstrate an information system application<br>
-        to support a new apartment system.<br>
-    </p>
 
+    </p>
+    <div>
+        <a href="https://github.com/mattina401/APT_Rental_sys"><img height="50px" src="IMG/github-logo.png"></a>
+    </div>
 </section>
 
-<section id="pac-man" style="background-color: #9F6164; height: 800px;text-align: center">
+
+<section id="pac-man" style="background-color: #0D6B7F; height: 900px;text-align: center">
     <div style="padding-top: 100px;">
         <img class="mySlides pac" style="visibility: visible;" src="IMG/pac-man/img-1.PNG"/>
         <img class="mySlides pac" style="visibility: hidden;" src="IMG/pac-man/img-2.PNG"/>
@@ -206,11 +251,13 @@
 
     </div>
     <div style="padding-top: 200px;">
-        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"onclick="plusDivs(-1, 'pac')"/>
-        <img src="IMG/right.png"style="position: relative; border-radius: 100%; right:0;"onclick="plusDivs(1, 'pac')"/>
+        <img src="IMG/left.png" style="position: relative; border-radius: 100%; left:0;margin-right: 700px"
+             onclick="plusDivs(-1, 'pac')"/>
+        <img src="IMG/right.png" style="position: relative; border-radius: 100%; right:0;"
+             onclick="plusDivs(1, 'pac')"/>
     </div>
 
-    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #6F3662">
+    <p style="font-family: 'Times New Roman', Arial, sans-serif; margin-top: 200px; font-size: 20px;color: #17bcdf">
         <span style="font-size: 30px;">Pac-Man</span><br>
         Java Developer Fall 2013<br><br>
 
@@ -218,9 +265,10 @@
         To solve maze, use BST, DST, right hand rule and left hand rule.<br>
         Learend how to apply data structure to simple game.<br>
     </p>
-
+    <div>
+        <a href="https://github.com/mattina401/PacMaze"><img height="50px" src="IMG/github-logo.png"></a>
+    </div>
 </section>
-
 
 
 <footer style="background-color: #17bcdf; height: 150px; width: 100%; display: table">
@@ -229,7 +277,7 @@
             <li><a href="https://www.facebook.com/mattina401"><img src="IMG/facebook.png" height="20"></a></li>
             <li><a href="https://www.linkedin.com/in/rexkim401"><img src="IMG/linkedin.png" height="20"></a></li>
             <li><a href="https://github.com/mattina401"><img src="IMG/github.png" height="20"></a></li>
-            <li><a href=""><img src="IMG/gmail.png" height="20"></a></li>
+            <li><a href="mailto:rexkim401@gmail.com"><img src="IMG/gmail.png" height="20"></a></li>
         </ul>
     </div>
 
@@ -239,27 +287,27 @@
 <script>
     var slideIndex = 1;
 
-    function plusDivs(n,m) {
+    function plusDivs(n, m) {
         showDivs(slideIndex += n, m);
     }
 
-    function showDivs(n,m) {
+    function showDivs(n, m) {
         var i;
         var x = document.getElementsByClassName(m);
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
         for (i = 0; i < x.length; i++) {
             x[i].style.visibility = "hidden";
         }
-        x[slideIndex-1].style.visibility = "visible";
+        x[slideIndex - 1].style.visibility = "visible";
 
     }
 
 </script>
-
-
-
-
 
 
 <script type="text/javascript">

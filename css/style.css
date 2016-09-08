@@ -95,7 +95,6 @@
 
 }
 
-
 #what-container1 {
     min-height: 146px;
 
@@ -122,11 +121,6 @@
 
 }
 
-
-
-
-
-
 .run-ani {
 
     animation: play-main 7s steps(159) forwards;
@@ -136,7 +130,6 @@
     -ms-animation: play-main 7s steps(159) forwards;
 }
 
-
 .run-ani-work {
 
     animation: play-main-work 7s steps(45) forwards;
@@ -145,8 +138,6 @@
     -o-animation: play-main-work 7s steps(45) forwards;
     -ms-animation: play-main-work 7s steps(45) forwards;
 }
-
-
 
 #dino-programming {
 
@@ -192,6 +183,48 @@
     animation: play9 1s steps(13);
     -webkit-animation: play9 1s steps(13);
 
+}
+
+#front-logo {
+
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+
+}
+
+#back-logo {
+
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#front-logo:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+
+}
+
+#back-logo:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
 }
 
 @keyframes play {
@@ -247,7 +280,6 @@
     }
 }
 
-
 @keyframes play-main {
     from {
         background-position: 0;
@@ -278,6 +310,7 @@
         background-position: -29097px;
     }
 }
+
 @-o-keyframes play-main {
     from {
 
@@ -288,6 +321,7 @@
         background-position: -29097px;
     }
 }
+
 @-ms-keyframes play-main {
     from {
 
@@ -298,10 +332,6 @@
         background-position: -29097px;
     }
 }
-
-
-
-
 
 @keyframes play-main-work {
     from {
@@ -333,6 +363,7 @@
         background-position: -15615px;
     }
 }
+
 @-o-keyframes play-main-work {
     from {
 
@@ -343,6 +374,7 @@
         background-position: -15615px;
     }
 }
+
 @-ms-keyframes play-main-work {
     from {
 
@@ -353,21 +385,6 @@
         background-position: -15615px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @keyframes play9 {
     0% {
@@ -459,7 +476,6 @@
     }
 }
 
-
 @-o-keyframes play-team {
     0% {
         background-position: 0;
@@ -468,7 +484,6 @@
         background-position: -2142px;
     }
 }
-
 
 @-ms-keyframes play-team {
     0% {
@@ -496,9 +511,9 @@
     height: 450px;
     width: 650px;
     position: absolute;
-    margin-left:auto;
-    margin-right:auto;
-    left:0;
-    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     border-radius: 2%;
 }
