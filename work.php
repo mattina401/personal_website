@@ -48,6 +48,39 @@
 
 <br><br><br>
 <hr>
+<section class="project" id="sql-generator">
+
+
+    <div class="project-img">
+        <img class="mySlides sql-generator" style="visibility: visible;" src="IMG/sql-generator/img-1.png"/>
+        <img class="mySlides sql-generator" style="visibility: hidden;" src="IMG/sql-generator/img-2.png"/>
+        <img class="mySlides sql-generator" style="visibility: hidden;" src="IMG/sql-generator/img-3.png"/>
+        <img class="mySlides sql-generator" style="visibility: hidden;" src="IMG/sql-generator/img-4.png"/>
+    </div>
+    <div class="project-btn">
+        <img src="IMG/left.png" style="left:0;margin-right: 700px;"
+             onclick="plusDivs(-1, 'sql-generator')"/>
+        <img src="IMG/right.png" style="right:0;"
+             onclick="plusDivs(1, 'sql-generator')"/>
+    </div>
+
+    <p>
+        <span>SQL Generator</span><br>
+
+        Online based MySQL tool to generate create table query quickly.<br>
+        Implemented a website which can generate CREATE TABLE statement automatically<br>
+        from database schema which user created.<br>
+        Implemented DB visualizer for database schema diagram using AngularJS and JsPlumb.<br>
+    </p>
+
+    <div style="display: inline-flex">
+        <div>
+            <a href="https://github.com/mattina401/sql-generator"><img height="50px" src="IMG/github-logo.png"></a>
+        </div>
+
+    </div>
+
+</section>
 <section class="project" id="link2list">
 
 
@@ -68,9 +101,9 @@
         <span>Link2List</span><br>
 
         Online task management website which can share<br>
-        task list with others and manage them in real time<br>
+        task list with others and manage them in real time.<br>
         Implemented frontend using HTML, CSS and communicated with MySQL by PHP<br>
-        and Ajax to spread data without reloading the whole page
+        and Ajax to spread data without reloading the whole page.
     </p>
 
     <div style="display: inline-flex">
